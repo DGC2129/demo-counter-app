@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: Service Name
+spec:
+  selector:
+    app: Selector Label
+  type: LoadBalancer | ClusterIp | NodePort
+  ports:
+    - name: name-of-the-port
+      port: 80
+      teargetPort: 8080
